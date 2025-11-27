@@ -1,4 +1,4 @@
-//NON PRIMITIVE DATATYPES-----------------------------------
+//PRIMITIVE DATATYPES-----------------------------------
 
 let stringy = "hello"
 let num = 12
@@ -23,7 +23,7 @@ console.log(id1 === id2);   // false even tho both symbol has same value input, 
 
 
 //NON PRIMITIVE DATATYPES-----------------------------------
-const arrays = ["capibara","panda","cat"]
+const arrays = ["capybara","panda","cat"]
 console.log(arrays);
 
 let myobj = {name:"Gojo",age:22} // object data type
