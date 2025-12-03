@@ -9,3 +9,6 @@ const jsuser = {
   isLoggedin: false,
   lastLoggedIn: ["Tuesday","Sunday"]
 }
+
+//one way to access this object:
+console.log(jsuser.email)
