@@ -23,4 +23,40 @@ console.log(Object.keys(tinderuser));
 console.log(Object.values(tinderuser));
 console.log(Object.entries(tinderuser));
 console.log(Object.hasOwnProperty('gender')) //  checks if has this key or not
+//-----------------------------------------------------------------------------------------------------
+
+//                 object de-structured and JSON API intro
+
+const course = {courseName: 'JavaScript', coursePrice: 999, courseInstructor: 'Humphry Davy'}
+
+// to aces different values we have to write course.coursename, course.courseprice and stuff which is too long
+// Syntatical sugar
+const {courseInstructor} = course //  now we can write course.courseInstructor as courseInstructor
+console.log(courseInstructor); //  yet too long
+
+const {courseInstructor: inst} = course //  inst is alias 
+
+console.log(inst);
+
+
+/* example of json, shich is returned on queries from backend and can be convereted into object for futher using 
+Note: can also look like a array
+{
+    "Name" = "Mathew Curry"
+    "Gender" = "Male"
+    "Position" = "Director"
+
+
+
+
+
+}
+
+
+
+
+
+
+*/
+
 
