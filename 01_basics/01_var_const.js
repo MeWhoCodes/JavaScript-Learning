@@ -16,3 +16,5 @@ aliveStatus = "Alive"
 
 
 console.table([name, email, number, landline, aliveStatus]);
+
+// lol let and const follow the scopes while var leaks out of scopes and corrupts the values, NEVER USE VAR
