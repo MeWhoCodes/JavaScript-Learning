@@ -24,4 +24,18 @@ for([key,value] of cntry){
     console.log(`Key: ${key}, Value: ${value}`);
     
 }
+
+console.log('--------------');
+
 //-----------------------------------------------------------------
+const obj = {
+    js: 'Javascript',
+    rb: 'Ruby',
+    cpp: 'C plus plus',
+    swift: 'Swift by apple'
+}
+//                                     for-in loop: iterable on objects
+for(i in obj){
+    console.log(i,':-', obj[i]);
+    
+}
