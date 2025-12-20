@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>DOM learning</title>
+
+</head>
+<body style="background-color: #212121; color:#fff">
+
+    <ul class= 'language'>
+        <li>JavaScript</li>
+    </ul>
+
+</body>
+
+<script>
+    function addLang(langname){
+        const newlang = document.createElement('li')
+        newlang.innerHTML = langname
+        document.querySelector(".language").appendChild(newlang)
+    }
+    
+
+    addLang("python")
+    addLang("C++")
+
+    // above function is not optimised as it traverses the whole tree and can be bad for lange scale projects
+
+    function addLangG(langname){
+        const newlang = document.createElement('li')
+        newlang.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(newlang)
+    }
+    addLangG('Go')
+    //Edit
+
+    const seclang = document.querySelector("li:nth-child(2)") // chosses 2nd of li
+    //seclang.innerHTML = 'Mojo'  // (works, not efficient)
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    seclang.replaceWith(newli)
+
+    //remove
+
+    const lem = document.querySelector('li:last-child')
+    lem.remove() //  removes the selected
+ 
+
+
+</script>
+
+</html>
