@@ -68,3 +68,17 @@ form.addEventListener("submit",function(e){
   
 })
 ```
+
+## Project 3
+Script for Clock
+```Javascript
+const clock = document.querySelector("#clock");
+//let timdat = new Date();
+// clock.innerHTML = timdat.toLocaleTimeString()
+
+// above code doesn't refresh automaticaly
+setInterval(function(){
+  let timdat = new Date();
+  clock.innerHTML = timdat.toLocaleTimeString();
+}, 1000)
+```
