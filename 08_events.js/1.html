@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>Events</title>
+
+</head>
+<body style="text-align: center; background-color: #212121; color:#fff">
+    <h1>Events</h1>
+    <span id="al" style="background-color: black">
+        Hello, click me for a alert
+    </span>
+    
+</body>
+<script>
+    const al = document.querySelector("#al")
+    //al.onclick = function(){alert("Why did you click this???")}           //<--- not a good method
+    al.addEventListener("click", function(){alert("You clicked me :)")})
+</script>
+
+</html>
