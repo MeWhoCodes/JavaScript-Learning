@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>Events</title>
+
+</head>
+<body style="text-align: center; background-color: #212121; color:#fff">
+
+    <h1>async</h1>
+    <h2 id="sec"> 3 </h2>
+    <button id="but">stop</button>
+    
+    
+</body>
+<script>
+
+    let mil = 3000
+
+    let st = setTimeout(function(){  // waits for a set time and then does smth and stops
+        alert("You died")
+    },mil) //  3 sec, 3000 milsec
+
+ 
+
+    let t = mil/1000
+
+    let si = setInterval(function(){
+        t--
+        document.querySelector("#sec").innerHTML = t
+       
+        
+    },1000)
+
+    document.querySelector('#but').addEventListener("click" , function(){
+        clearTimeout(st)
+        clearInterval(si)
+    })
+
+  
+
+
+</script>
+
+</html>
